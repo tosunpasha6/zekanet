@@ -35,16 +35,28 @@
         background-color: rgba(0, 0, 0, 0.363);
         color: whitesmoke;
         font-size: 25px;
-
         position: fixed;
+        text-align: start;
+        
+        
     }
 
     .link1 {
         color: whitesmoke;
         text-decoration: none;
-        margin-left: 10%;
+        margin-left: 35%;
+        position: absolute; 
+        margin-top: 1.5%;
+        
     }
-
+    .link5 {
+        color: whitesmoke;
+        text-decoration: none;
+        margin-left: 20%;
+        position: absolute; 
+        margin-top: 1.5%;
+        
+    }
     .link2 {
         color: whitesmoke;
         text-decoration: none;
@@ -55,7 +67,7 @@
     .link3 {
         color: whitesmoke;
         text-decoration: none;
-        margin-left: 8%;
+        margin-left: 75%;
         font-size: 15px;
     }
 
@@ -218,12 +230,18 @@
     }
 
     .wrapper {
-        background-color: transparent
+        background-color: transparent;
+        margin-top: 5%;
     }
 #foto{
     margin: 10px;
 border-radius: 15px
 
+}
+#oba{
+    display: inline-block;
+     position: absolute; 
+    margin-top: 20px;
 }
 
 #button1{
@@ -235,26 +253,64 @@ border-radius: 15px
     color: whitesmoke;
 
 }
-    ;
+#sagamu{
+    margin-left: 50%;
+    color: whitesmoke;
+        text-decoration: none;
+        position: absolute; 
+        margin-top: 1.5%;
+}
+
+@media screen and (max-width:550px) {
+
+.navbar{
+    font-size: 15px;
+    
+}
+
+.link5{
+margin-left: 20%;
+}
+
+.link3{
+    margin-left: 10%;
+}
+.link1{
+    margin-left: 30%;
+}
+#sagamu{
+    margin-left: 38%;
+}
+#oba{
+    margin-top: 10px
+}
+#foto{
+    scale: 0.5;
+}
+
+}
 </style>
 
 
 <body>
     <div class="navbar">
-        <h3 style="display: inline-block; color: whitesmoke; margin: 20px;">ZekaNetLabs</h3>
-        <a href="" class="link1">Ana Menü</a>
-        <a href="" class="link1">Projeler</a>
-        <a href="#sugoma" class="link1">Ekip</a>
+
+    <img src="resimler/ZekaNetzseffaf.png" alt="" style="width: 5%; height: 5%;">
+    <h3 id="oba">ZekaNet Labs.</h3>
+        <a href="" class="link5" style="position: absolute; margin-top: 1.5%;">Ana Menü</a>
+        <a href="#sagoma" class="link1">Projeler</a>
+        <a href="#sugoma"  id="sagamu"  >Ekip</a>
         <a href="" class="link3">Github</a>
         <a href="" class="link2">Discord</a>
-
+    
+    
 
     </div>
 
     <center>
         <div class="wrapper">
             <svg>
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle" style="display: block;">
                     ZekaNetLabs
                 </text>
             </svg>
@@ -350,14 +406,16 @@ border-radius: 15px
     </center>
     <center>
 
-        <h1 style="color: whitesmoke;" id="sugoma">Projeler</h1>
+        <h1 style="color: whitesmoke;" id="sagoma">Projeler</h1>
+    </center>
         <hr>
 
 
     
 
-</body>
+
 <div>
+    <center>
     <button id="button1" ><</button>
 
 <img src="resimler/handgame1.png" alt="" id="foto">
@@ -365,7 +423,8 @@ border-radius: 15px
 <button id="button2" style="background-color: transparent; border: none; font-size: 20px; cursor: pointer; color: whitesmoke;">></button>
 </div>
 
-
-<script src="tosun2.js"></script>
 </center>
+<script src="tosun2.js"></script>
+
+</body>
 </html>
